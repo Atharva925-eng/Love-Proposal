@@ -106,35 +106,7 @@ body { font-family:'Nunito',sans-serif; background:var(--light); min-height:100v
 .cp { position:absolute; top:-20px; animation:cfFall linear forwards; font-size:1.4rem; }
 @keyframes cfFall { 0%{transform:translateY(0) rotate(0deg);opacity:1;} 90%{opacity:1;} 100%{transform:translateY(110vh) rotate(720deg);opacity:0;} }
 
-/* create strip */
-.create-strip { width:100%; text-align:right; padding:10px 16px; z-index:2; }
-.create-btn {
-  display:inline-flex; align-items:center; gap:6px;
-  background:var(--card); border:2px solid rgba(255,182,200,.5);
-  border-radius:30px; padding:9px 18px;
-  font-family:'Nunito',sans-serif; font-size:.8rem; font-weight:800;
-  color:var(--deep); cursor:pointer;
-  box-shadow:0 3px 14px rgba(232,67,122,.12);
-  transition:transform .18s, box-shadow .18s;
-}
-.create-btn:hover { transform:scale(1.06); box-shadow:0 6px 20px rgba(232,67,122,.25); }
 
-/* ── Builder Modal ── */
-#builder-modal { display:none; position:fixed; inset:0; z-index:2000; background:rgba(255,220,235,.85); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:16px; }
-#builder-modal.open { display:flex; }
-.builder-box { background:#fff; border-radius:28px; padding:28px 24px; max-width:500px; width:100%; box-shadow:0 20px 60px rgba(232,67,122,.25); border:2px solid rgba(255,182,200,.4); max-height:92vh; overflow-y:auto; }
-.builder-box h2 { font-family:'Pacifico',cursive; color:var(--deep); font-size:1.5rem; margin-bottom:4px; text-align:center; }
-.bsub { text-align:center; color:#c0557a; font-weight:600; font-size:.85rem; margin-bottom:18px; }
-.b-section { margin-bottom:14px; }
-.b-section label { display:block; font-weight:800; color:var(--deep); font-size:.82rem; margin-bottom:5px; }
-.b-section input[type=text] { width:100%; padding:9px 13px; border-radius:12px; border:2px solid rgba(255,182,200,.6); font-family:'Nunito',sans-serif; font-size:.92rem; color:#333; outline:none; }
-.b-section input[type=text]:focus { border-color:var(--pink); }
-
-.builder-actions { display:flex; gap:10px; justify-content:center; margin-top:12px; }
-.b-btn { padding:11px 30px; border-radius:50px; border:none; font-family:'Nunito',sans-serif; font-size:.92rem; font-weight:800; cursor:pointer; transition:transform .15s; }
-.b-btn:hover { transform:scale(1.05); }
-.b-btn.primary { background:linear-gradient(135deg,#ff6b9d,#e8437a); color:#fff; box-shadow:0 4px 16px rgba(232,67,122,.4); }
-.b-btn.secondary { background:#ffd6e8; color:var(--deep); }
 
 @media(max-width:480px){ .card-grid,.thankyou-grid { grid-template-columns:repeat(2,1fr); } }
 </style>
@@ -147,17 +119,17 @@ body { font-family:'Nunito',sans-serif; background:var(--light); min-height:100v
 <div class="screen active" id="proposal">
   <div class="question-block">
     <h1 id="prop-title">Hey, You! 💕</h1>
-    <p class="sub" id="prop-sub">I've been holding this in for too long finally I LOVE YOU!!!! <br>will you be mine forever!!!!</p>
+    <p class="sub" id="prop-sub">I've been holding this in for too long finally I LOVE YOU!!!! <br>SUHANI will you be mine forever!!!!</p>
   </div>
 
   <div class="card-grid" id="propCards">
     <!-- 6 cards with cute cat images from picsum (cat-themed placeholders) -->
-    <div class="cat-card"><img src="download (2) - Copy.jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐱'"></div>
-    <div class="cat-card"><img src="download (3) - Copy.jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐾'"></div>
+    <div class="cat-card"><img src="download7.jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐱'"></div>
+    <div class="cat-card"><img src="WhatsApp Image 2026-05-19 at 9.55.41 AM (1).jpeg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐾'"></div>
     <div class="cat-card"><img src="download (4).jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🌸'"></div>
-    <div class="cat-card"><img src="download (5).jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💕'"></div>
-    <div class="cat-card"><img src="download (6).jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐈'"></div>
-    <div class="cat-card"><img src="download7.jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💝'"></div>
+    <div class="cat-card"><img src="WhatsApp Image 2026-05-19 at 9.45.05 AM.jpeg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💕'"></div>
+    <div class="cat-card"><img src="download (2) - Copy.jpg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐈'"></div>
+    <div class="cat-card"><img src="WhatsApp Image 2026-05-19 at 9.45.05 AM (1).jpeg" alt="cat" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💝'"></div>
   </div>
 
   <div class="btn-row">
@@ -174,15 +146,15 @@ body { font-family:'Nunito',sans-serif; background:var(--light); min-height:100v
   <div class="confetti-wrap" id="confettiWrap"></div>
 
   <h1 id="ty-title">Thank You Now your my Soulmate!! 🎊</h1>
-  <p class="ty-sub" id="ty-sub">You two are officially the cutest couple in the whole universe 💑✨</p>
+  <p class="ty-sub" id="ty-sub">Will be with you always and forever 💑✨</p>
 
   <div class="thankyou-grid" id="tyCards">
     <div class="ty-card" style="animation-delay:.05s"><img src="hài.jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🥰'"></div>
-    <div class="ty-card" style="animation-delay:.11s"><img src="Meow meow flower_.jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💖'"></div>
+    <div class="ty-card" style="animation-delay:.11s"><img src="WhatsApp Image 2026-05-19 at 9.55.41 AM (1).jpeg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💖'"></div>
     <div class="ty-card" style="animation-delay:.17s"><img src="Thank you so much.jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🌸'"></div>
-    <div class="ty-card" style="animation-delay:.23s"><img src="thank.jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💕'"></div>
-    <div class="ty-card" style="animation-delay:.29s"><img src="download7.jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐾'"></div>
-    <div class="ty-card" style="animation-delay:.35s"><img src="download (6).jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💝'"></div>
+    <div class="ty-card" style="animation-delay:.23s"><img src="WhatsApp Image 2026-05-19 at 9.55.41 AM.jpeg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💕'"></div>
+    <div class="ty-card" style="animation-delay:.29s"><img src="download (6).jpg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='🐾'"></div>
+    <div class="ty-card" style="animation-delay:.35s"><img src="WhatsApp Image 2026-05-19 at 9.45.05 AM (1).jpeg" alt="" onerror="this.parentNode.classList.add('empty');this.parentNode.textContent='💝'"></div>
   </div>
 
   <div class="ty-message" id="ty-message">
@@ -191,50 +163,10 @@ body { font-family:'Nunito',sans-serif; background:var(--light); min-height:100v
     Together forever, always &amp; always! 🌸🫶🌸
   </div>
 
-  <div class="create-strip">
-    <button class="create-btn" onclick="openBuilder()">
-      ✨ Create yours — propose to your love!
-    </button>
-  </div>
+
 </div>
 
-<!-- ══ BUILDER MODAL ══ -->
-<div id="builder-modal">
-  <div class="builder-box">
-    <h2>💌 Make It Yours</h2>
-    <p class="bsub">Add your photos, names &amp; words — then preview!</p>
 
-    <div class="b-section">
-      <label>Your name (optional)</label>
-      <input type="text" id="b-yourname" placeholder="e.g. Aarav">
-    </div>
-    <div class="b-section">
-      <label>Her name (optional)</label>
-      <input type="text" id="b-hername" placeholder="e.g. Priya">
-    </div>
-    <div class="b-section">
-      <label>Proposal heading</label>
-      <input type="text" id="b-title" value="Hey, You! 💕">
-    </div>
-    <div class="b-section">
-      <label>Tagline below heading</label>
-      <input type="text" id="b-sub" value="I've been holding this in for too long…">
-    </div>
-    <div class="b-section">
-      <label>Thank-you page heading</label>
-      <input type="text" id="b-tytitle" value="She Said YES!! 🎊">
-    </div>
-    <div class="b-section">
-      <label>Thank-you message</label>
-      <input type="text" id="b-tymsg" placeholder="Together forever… 🌸">
-    </div>
-
-    <div class="builder-actions">
-      <button class="b-btn secondary" onclick="closeBuilder()">Cancel</button>
-      <button class="b-btn primary" onclick="applyBuilder()">Preview 💕</button>
-    </div>
-  </div>
-</div>
 
 <script>
 /* ── petals ── */
@@ -312,36 +244,7 @@ function launchConfetti(){
   wave(60,0); wave(45,1900); wave(35,3600);
 }
 
-/* ── Builder ── */
-function openBuilder(){
-  document.getElementById('builder-modal').classList.add('open');
-}
-function closeBuilder(){ document.getElementById('builder-modal').classList.remove('open'); }
 
-function applyBuilder(){
-  const title=document.getElementById('b-title').value||'Hey, You! 💕';
-  const sub=document.getElementById('b-sub').value||"I've been holding this in for too long…";
-  const tyT=document.getElementById('b-tytitle').value||'She Said YES!! 🎊';
-  const tyMsg=document.getElementById('b-tymsg').value||'Together forever, always & always! 🌸🫶🌸';
-  const yn=document.getElementById('b-yourname').value;
-  const hn=document.getElementById('b-hername').value;
-
-  document.getElementById('prop-title').textContent=title;
-  document.getElementById('prop-sub').textContent=sub;
-  document.getElementById('ty-title').textContent=tyT;
-  let msg=tyMsg.replace(/&/g,'&amp;');
-  if(yn&&hn) msg+=`<br><br><strong>— ${yn} 💌 ${hn}</strong>`;
-  else if(yn) msg+=`<br><br><strong>— ${yn} 💌</strong>`;
-  document.getElementById('ty-message').innerHTML=msg;
-
-  closeBuilder();
-  // reset to proposal
-  document.getElementById('thankyou').classList.remove('active');
-  noBtn.style.display='';
-  noEscapes=0; noBtn.style.transform='scale(1)'; noBtn.style.opacity='1';
-  placeNoInit();
-  document.getElementById('proposal').classList.add('active');
-}
 </script>
 </body>
 </html>
